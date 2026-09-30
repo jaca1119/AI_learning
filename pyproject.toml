@@ -2,4 +2,7 @@
 name = "ai-learning"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "openai>=3.22.1",
+    "python-dotenv>=1.2.3",
+]
