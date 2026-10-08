@@ -87,9 +87,14 @@ if __name__ == "__main__":
 
     question = "Jakie było zdanie pana Tomasza na temat katarynek?"
     found = search_index(index, question)
-    print(found[:3])
+    for chunk in found[:3]:
+        print("---------------------")
+        print(chunk["text"])
+        print("---------------------")
 
     question = "Dlaczego pan Tomasz zmienił zdanie o katarynkach?"
     found = search_index(index, question)
-    print(found[:3])
-
+    for chunk in found[:3]:
+        print("---------------------")
+        print(chunk["text"])
+        print("---------------------")
